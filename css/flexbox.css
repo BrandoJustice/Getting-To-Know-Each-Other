@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;600&display=swap');
+
+*,html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #FEA443;
+    font-family: 'Poppins', sans-serif; 
+}
+header{
+    background-color: #705E78;
+    padding: 25px;
+    color: white;
+}
+p {
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 600;
+}
+.page-wraper{
+    margin: 0;
+    padding: 0;
+    background-color: #FEA443;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+.column-one{
+    height: 450px;
+    padding: 5%;
+    --stripe: #F0F0F0;
+    --bg: #E8E8E8;
+    background: linear-gradient(135deg, var(--bg) 25%, transparent 25%) -50px 0, linear-gradient(225deg, var(--bg) 25%, transparent 25%) -50px 0, linear-gradient(315deg, var(--bg) 25%, transparent 25%), linear-gradient(45deg, var(--bg) 25%, transparent 25%);
+    background-size: 100px 100px;
+    background-color: var(--stripe);
+}
+.column-three{
+    height: 450px;
+    padding: 5%;
+    background-color: #F0F0F0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32'%3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M0 24h4v2H0v-2zm0 4h6v2H0v-2zm0-8h2v2H0v-2zM0 0h4v2H0V0zm0 4h2v2H0V4zm16 20h-6v2h6v-2zm0 4H8v2h8v-2zm0-8h-4v2h4v-2zm0-20h-6v2h6V0zm0 4h-4v2h4V4zm-2 12h2v2h-2v-2zm0-8h2v2h-2V8zM2 8h10v2H2V8zm0 8h10v2H2v-2zm-2-4h14v2H0v-2zm4-8h6v2H4V4zm0 16h6v2H4v-2zM6 0h2v2H6V0zm0 24h2v2H6v-2z'/%3E%3C/g%3E%3C/svg%3E");
+}
+.column-two{
+  height: 450px;
+  padding: 5%;
+  background-color: #DFDBE5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='40' viewBox='0 0 50 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M40 10L36.67 0h-2.11l3.33 10H20l-2.28 6.84L12.11 0H10l6.67 20H10l-2.28 6.84L2.11 10 5.44 0h-2.1L0 10l6.67 20-3.34 10h2.11l2.28-6.84L10 40h20l2.28-6.84L34.56 40h2.1l-3.33-10H40l2.28-6.84L47.89 40H50l-6.67-20L50 0h-2.1l-5.62 16.84L40 10zm1.23 10l-2.28-6.84L34 28h4.56l2.67-8zm-10.67 8l-2-6h-9.12l2 6h9.12zm-12.84-4.84L12.77 38h15.79l2.67-8H20l-2.28-6.84zM18.77 20H30l2.28 6.84L37.23 12H21.44l-2.67 8zm-7.33 2H16l-4.95 14.84L8.77 30l2.67-8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.column-four{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkorange;
+    height: 100%;
+    padding: 25px;
+    color: ghostwhite;
+    font-size: 18px;
+    margin: 0;
+}
+.double-column{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 2;
+}
+footer{
+    background-color: #705E78;
+    padding: 30px;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 25px;
+    width: 100%;
+}
+h2.subhead{
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+
+}
+h2.font-bg{
+    font-size: 60px;
+    line-height: 70px;
+    margin-top: -80px; 
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    text-transform: uppercase;
+    background: url(../img/bg.jpeg) 0 0 / cover no-repeat;/*Photo by <a href="https://unsplash.com/@markusspiske?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Markus Spiske</a> on <a href="https://unsplash.com/s/photos/code?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  */
+    color: #de466c; /*fallback color for older devices*/
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    
+}
+@media screen and (max-width:600px){
+    .column {
+        flex: 1;
+        flex-direction: column;
+    }
+    .double-column{
+        flex: 1;
+        flex-direction: column;
+    }
+    .row{
+        display: grid;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0px;
+    }
+    h2.font-bg{
+        margin-left: 0px;
+        padding: 25px 0px 25px 0px;
+    }
+}
