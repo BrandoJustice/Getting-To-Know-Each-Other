@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CodeSquad</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/flexbox.css">
+</head>
+    <body>
+        <header>
+            <h1>CodeSquad</h1>
+            <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="Index.html" target="_self">Home</a>
+  <a href="PitHubProject.html" target="_self">PitHub Project</a>
+  
+                
+</div>
+
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+            
+        </header>
+        <div class="page-wrapper">
+            <div class="row" style="display: flex; justify-content: center;">
+                <img style="height:auto;width:50%;margin:0px;" data-type="float" src="img/PitHub_Flier.png" alt="PitHub Flyer">
+
+            </div>
+        </div>
+    <footer>
+        <p>© <script>document.write(new Date().getFullYear())</script> CodeSquad, Brandon Justice and Nicholas Scoles</p>    
+    </footer>
+    </body>
+</html>
